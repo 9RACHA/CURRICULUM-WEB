@@ -1,0 +1,254 @@
+/* =========================
+   ESTILOS GENERALES DEL BODY
+   ========================= */
+
+/* Estilos base de toda la página */
+body {
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente limpia y legible */
+    background-color: #f3f5f9; /* Color de fondo gris claro */
+    color: #1f2933; /* Color principal del texto */
+    cursor: crosshair; /* Cursor diferente en toda la página */
+}
+
+/* =========================
+   CABECERA (HEADER)
+   ========================= */
+
+/* Contenedor del encabezado */
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px 40px; /* Espaciado interno */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Sombra suave inferior */
+    text-align: center; /* Centra el contenido del header */
+}
+
+/* Nombre principal */
+header h1 {
+    margin: 0; /* Quita márgenes por defecto */
+    font-size: 28px; /* Tamaño grande para destacar el nombre */
+}
+
+/* Subtítulo del header */
+header p {
+    margin: 5px 0 15px; /* Espaciado vertical */
+    color: #6b7280; /* Color gris secundario */
+}
+
+/* Enlaces del menú de navegación */
+nav a {
+    margin-right: 20px; /* Separación entre enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    color: #2563eb; /* Color azul */
+    cursor: pointer; /* Cursor de mano sobre enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto al pasar el ratón por el menú */
+nav a:hover {
+    text-decoration: underline; /* Subraya al hacer hover */
+}
+
+/* Botón de descarga de CV */
+.btn-download {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(37,99,235,0.14);
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.btn-download:hover {
+    background-color: #1e4fd8;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+/* Contenedor principal del contenido */
+main {
+    max-width: 1000px; /* Ancho máximo */
+    margin: 40px auto; /* Centra el contenido */
+    padding: 0 20px; /* Margen lateral en pantallas pequeñas */
+}
+
+/* Separación entre secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Títulos de cada sección */
+section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TARJETAS (CARDS)
+   ========================= */
+
+/* Estilo de las cajas blancas */
+.card {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px 25px; /* Espaciado interno */
+    margin-bottom: 20px; /* Separación entre tarjetas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04); /* Sombra ligera */
+}
+
+/* Títulos dentro de las tarjetas */
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Texto descriptivo dentro de tarjetas */
+.card p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* =========================
+   LISTAS GENERALES
+   ========================= */
+
+/* Estilo base de listas */
+ul {
+    padding-left: 20px; /* Sangría */
+    margin-top: 10px;
+}
+
+/* Separación entre elementos de lista */
+ul li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   HABILIDADES
+   ========================= */
+
+/* Quita los puntos de la lista de habilidades */
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de cada habilidad */
+.skills li {
+    background-color: #f8fafc; /* Fondo gris muy claro */
+    border: 1px solid #e5e7eb; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+/* Pie de página */
+footer {
+    background-color: #ffffff;
+    text-align: center; /* Centra el texto */
+    padding: 20px;
+    color: #6b7280;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05); /* Sombra superior */
+}
+
+/* =========================
+   ENLACES GENERALES
+   ========================= */
+
+/* Color global de los enlaces */
+a {
+    color: #2563eb;
+}
+
+/* Fondo general de la página */
+body {
+    background-color: #f3f5f9;
+}
+
+/* Secciones centradas */
+section {
+    margin-bottom: 40px;
+}
+
+/* Tarjetas blancas (LO MÁS IMPORTANTE) */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* Texto dentro de tarjetas */
+.card p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección Sobre mí */
+.bio-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-container {
+    flex-shrink: 0;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff; /* Borde blanco alrededor de la foto */
+    box-shadow: 0 6px 18px rgba(16,24,40,0.12); /* Sombra suave */
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.profile-img:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(16,24,40,0.18);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .bio-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio-text {
+        padding-top: 10px;
+    }
+}
+
